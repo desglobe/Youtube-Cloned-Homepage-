@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s linear;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  // width: 100%;
+  // position: relative;
+  z-index: 1000;
+}
+nav #navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  // left: 1%;
+  // right: 1%;
+  height: 12vh;
+  background: #222222;
+  border-bottom: 1px solid #706f6f;
+  width: 100%;
+}
+nav .logo-header {
+  display: flex;
+  align-items: center;
+}
+.logo-header p {
+  position: relative;
+  top: -2.2rem;
+  left: 1rem;
+}
+.Youtube img {
+  padding-top: 7em;
+  padding-left: 1.5em;
+}
+.logo-header span {
+  letter-spacing: -2px;
+}
+nav .input-group input {
+  border: 1px solid white;
+}
+nav input[type="text"] {
+  width: 40vw;
+  height: 25px;
+  border-radius: 0;
+  margin-left: 115px;
+}
+nav button[type="submit"] {
+  margin-right: 195px;
+  height: 28px;
+  width: 3vw;
+}
+nav .icon-header {
+  display: flex;
+  margin-right: 1.5em;
+}
+nav .input-header {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+nav .icon-header img {
+  width: 2.4vw;
+  margin-left: 1.2rem;
+  height: 3.5rem;
+  cursor: pointer;
+}
+.fa-bars {
+  font-size: 1.6rem;
+  padding-top: 0.2em;
+  padding-left: 1em;
+}
+nav .microphone-bg .fa-microphone {
+  color: rgb(136, 130, 130);
+  font-size: 1.3rem;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+}
+nav .microphone-bg {
+  position: relative;
+  margin-left: -185px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-icon img {
+  width: 3vw;
+}
+
+// Media queries
+
+// Media @1024px
+@media (max-width: 1024px) {
+  nav input[type="text"] {
+    width: 32vw;
+  }
+}
+// Media @992px
+@media (max-width: 992px) {
+  nav input[type="text"] {
+    width: 30vw;
+  }
+}
+// Media @768px
+@media (max-width: 768px) {
+  nav input[type="text"] {
+    width: 18vw;
+  }
+}
+// Media @480px
+@media (max-width: 480px) {
+  nav input[type="text"] {
+    display: none;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .Youtube img {
+    position: relative;
+    left: -25px;
+  }
+  .Youtube p {
+    position: relative;
+    left: -10px;
+    top: -30px;
+  }
+}
+
+// Header container
+
+header {
+  position: relative;
+  top: 77px;
+  left: 258px;
+  height: auto;
+  z-index: 1000;
+}
+header .preview-cont {
+  display: flex;
+  background: #222222;
+  position: fixed;
+}
+header .preview-cont p:nth-child(1) {
+  color: #fff;
+  padding: 0.6em;
+  margin-top: 1em;
+  margin-left: 1em;
+  border-radius: 75px;
+}
+header .preview-cont p:nth-child(2),
+P:nth-child(3),
+p:nth-child(4),
+p:nth-child(5),
+p:nth-child(6),
+p:nth-child(7),
+p:nth-child(8),
+p:nth-child(9),
+p:nth-child(10),
+p:nth-child(11),
+p:nth-child(12) {
+  color: #fff;
+  background: #3f3e3e;
+  padding: 0.6em;
+  margin-top: 1em;
+  margin-left: 1em;
+  border-radius: 75px;
+}
+// header .preview-cont p:nth-child(2),
+// P:nth-child(3),
+// p:nth-child(4),
+// p:nth-child(5),
+// p:nth-child(6),
+// p:nth-child(7),
+// p:nth-child(8),
+// p:nth-child(9),
+// p:nth-child(10),
+// p:nth-child(11),
+// p:nth-child(12):hover {
+//   background: #3f3e3e;
+// }
+
+// Main container
+
+main {
+  display: grid;
+  grid-template-columns: 17% 83%;
+  position: relative;
+  top: 77px;
+}
+main aside {
+  display: flex;
+  flex-direction: column;
+  background: #3f3e3e;
+}
+main aside .home {
+  background: #888585;
+}
+main aside .home a,
+.explore a,
+.subscribe a,
+.ytmusic a {
+  display: flex;
+  color: #222222;
+  text-decoration: none;
+  padding-top: 1em;
+  padding-left: 1.5em;
+}
+main aside .explore:hover,
+.subscribe:hover,
+.ytmusic:hover {
+  background: #888585;
+}
+main aside a .fa-home {
+  font-size: 1.5rem;
+  color: #fff;
+}
+main aside a p {
+  padding-left: 1.2em;
+}
+section .gtr {
+  background: crimson;
+  margin-top: 100px;
+}
+section {
+  position: relative;
+  background: coral;
+}
