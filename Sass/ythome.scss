@@ -209,11 +209,13 @@ main aside {
   position: fixed;
   top: 76px;
   width: 17%;
+  // overflow-x: hidden;
+  // overflow-y: scroll;
+  height: 550px;
 }
 main aside:hover {
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 100%;
 }
 aside .donut {
   background: #3f3e3e;
@@ -221,27 +223,64 @@ aside .donut {
 main aside .home {
   background: #888585;
 }
-aside .first-aside {
-  border-bottom: 1px solid snow;
+aside .first-aside,
+.fourth-aside,
+.fifth-aside {
+  border-bottom: 1px solid #706f6f;
 }
 aside .second-aside {
   margin-top: 0.5em;
-  border-bottom: 1px solid snow;
+  border-bottom: 1px solid #706f6f;
+}
+aside .third-aside {
+  border-bottom: 1px solid #706f6f;
+}
+.first-aside .you-music {
+  margin-bottom: 0.5em;
 }
 .second-aside .show-more {
+  margin-bottom: 0.5em;
+}
+.third-aside .show-mores {
   margin-bottom: 0.5em;
 }
 .third-aside > p {
   padding-left: 2em;
   padding-top: 1em;
 }
+.fourth-aside > p {
+  padding-left: 2em;
+  padding-top: 1em;
+}
 .third-aside .sensor-top img {
-  padding-left: 1.2em;
+  padding-left: 1.4em;
   filter: sepia(1) saturate(8);
 }
 .third-aside .sensor-btm img {
-  padding-left: 2rem;
+  padding-left: 2.2rem;
   filter: sepia(1) saturate(8);
+}
+.third-aside .dot-top {
+  padding-left: 2.1em;
+}
+.third-aside .dot-btm {
+  padding-left: 1.2em;
+}
+.third-aside .dot-btmlast {
+  padding-left: 0.9em;
+}
+.third-aside .fa-circle {
+  color: #4141f0;
+  font-size: 0.3rem;
+}
+.fourth-aside .sports {
+  margin-bottom: 0.5em;
+}
+.fifth-aside .settings {
+  margin-top: 0.5em;
+}
+.fifth-aside .feedback {
+  margin-bottom: 0.5em;
 }
 aside p {
   font-size: 0.9rem;
@@ -262,7 +301,16 @@ aside .home a,
 .cold-fusion a,
 .crash-course a,
 .traversy-media a,
-.yale-uni a {
+.yale-uni a,
+.show-mores a,
+.yt-premium a,
+.gaming a,
+.live a,
+.sports a,
+.settings a,
+.report a,
+.help a,
+.feedback a {
   display: flex;
   color: #222222;
   text-decoration: none;
@@ -284,7 +332,16 @@ aside .explore:hover,
 .cold-fusion:hover,
 .crash-course:hover,
 .traversy-media:hover,
-.yale-uni:hover {
+.yale-uni:hover,
+.show-mores:hover,
+.yt-premium:hover,
+.gaming:hover,
+.live:hover,
+.sports:hover,
+.settings:hover,
+.report:hover,
+.help:hover,
+.feedback:hover {
   background: #888585;
 }
 main aside a .fa-home {
@@ -293,6 +350,24 @@ main aside a .fa-home {
 }
 main aside a p {
   padding-left: 1.2em;
+}
+.last-aside .top-links,
+.bottom-links {
+  margin-top: 1em;
+  margin-left: 1.5em;
+}
+.top-links a,
+.bottom-links a {
+  font-size: 0.7rem;
+  color: #c7c1c1;
+  text-decoration: none;
+  padding-left: 0.1em;
+}
+.copyright p {
+  padding-left: 1.5em;
+  color: #706f6f;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 section .gtr {
   z-index: -1000;
