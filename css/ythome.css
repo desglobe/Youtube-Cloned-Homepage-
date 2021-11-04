@@ -165,6 +165,7 @@ header .preview-cont {
   display: flex;
   background: #222222;
   position: fixed;
+  border-bottom: 1px solid #b1adad;
   width: 100%;
 }
 
@@ -394,17 +395,280 @@ main aside a p {
   padding-bottom: 1em;
 }
 
-section .gtr {
-  z-index: -1000;
-}
-
 section {
   position: absolute;
   top: 152px;
   left: 229px;
   width: 83%;
   min-height: 300vh;
-  background: cornflowerblue;
+  background: #222222;
   z-index: -1000;
+}
+
+section .main-feeds {
+  z-index: -1000;
+}
+
+/* First video category */
+#first-vids-category,
+#second-vids-category,
+#third-vids-category,
+#fourth-vids-category {
+  display: flex;
+}
+
+#vids-bg,
+#vids-real {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  max-width: 14.5rem;
+  width: 100%;
+  height: 32vh;
+  margin: 1rem;
+  padding: 1.051%;
+  background-color: #222222;
+}
+
+#vids-bg:hover {
+  background: #535252;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.vids-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.vids-link:hover {
+  color: #fff;
+}
+
+/* Chegg Ad Link on Video */
+.chegg-ad-link {
+  position: absolute;
+  top: 100px;
+  right: 25px;
+  background: black;
+  width: 30px;
+  height: 5vh;
+}
+
+.chegg-ad-img {
+  position: relative;
+  top: 3px;
+  right: -8px;
+  filter: invert(100%) sepia(100%) saturate(0%) brightness(103%) contrast(100%);
+  width: 16px;
+}
+
+#vids-b {
+  max-width: 14.5rem;
+  width: 100%;
+  height: 20vh;
+}
+
+/* Chegg Ads top */
+.chegg-ads .chegg-ads-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chegg-ads .chegg-ads-title p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: -1px;
+}
+
+.chegg-ads-text {
+  color: #aca2a2;
+  font-size: 0.7rem;
+  font-weight: 400;
+  position: relative;
+  top: -5px;
+}
+
+/* Chegg Ads below */
+.chegg-bg {
+  display: flex;
+  gap: 10px;
+  margin-top: -12px;
+}
+
+.chegg-ad-bg {
+  color: #fff;
+  background: #f5a904;
+  padding: 0.1em;
+}
+
+.chegg-name {
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Photoshop video */
+.photoshop-timer {
+  position: absolute;
+  top: 115px;
+  right: 25px;
+  background: black;
+  width: 50px;
+  height: 3vh;
+}
+
+.photoshop-timer-text {
+  position: relative;
+  top: 1px;
+  right: -3px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.photoshop .photoshop-title {
+  display: flex;
+  gap: 10px;
+}
+
+.photoshop-title .photoshop-title-img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.photoshop-title p {
+  font-size: 0.8rem;
+}
+
+.photoshop-stat {
+  margin-left: 2.8em;
+  margin-top: -0.7em;
+}
+
+.photoshop-stat p {
+  font-size: 0.9rem;
+}
+
+.photoshop-stat p:nth-child(2) {
+  margin-top: -1em;
+}
+
+.verified {
+  background: #504f4f;
+  border-radius: 50%;
+  width: 15px;
+}
+
+/* Laolu Mix */
+.laolu-mix-bg {
+  position: absolute;
+  bottom: 87px;
+  right: 12px;
+  background: rgba(101, 62, 61, 0.8);
+  width: 14rem;
+  height: 3.5vh;
+}
+
+.laolu-mix-img {
+  position: relative;
+  left: 100px;
+  filter: invert(100%) sepia(100%) saturate(0%) brightness(103%) contrast(100%);
+  width: 24px;
+}
+
+/* Stanford Uni */
+.stanford-stat {
+  margin-left: 2.8em;
+  margin-top: -0.7em;
+}
+
+.stanford-stat p {
+  font-size: 0.9rem;
+}
+
+.stanford-stat p:nth-child(1) {
+  font-size: 0.8rem;
+}
+
+.stanford-stat p:nth-child(2) {
+  margin-top: -1em;
+}
+
+/* Second video category */
+.supersport-timer {
+  position: absolute;
+  top: 115px;
+  right: 25px;
+  background: black;
+  width: 30px;
+  height: 3vh;
+}
+
+.supersport-timer-text {
+  position: relative;
+  top: -0.5px;
+  right: -2px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.supersport-title p {
+  font-size: 0.8rem;
+}
+
+.supersport-stat {
+  margin-left: 2.8em;
+  margin-top: -0.7em;
+}
+
+.supersport-stat p:nth-child(1) {
+  font-size: 0.9rem;
+}
+
+.supersport-stat p:nth-child(2) {
+  font-size: 0.8rem;
+  margin-top: -1em;
+}
+
+.superbook-timer {
+  position: absolute;
+  top: 115px;
+  right: 25px;
+  background: black;
+  width: 40px;
+  height: 3vh;
+}
+
+.superbook-timer-text {
+  position: relative;
+  top: -0.5px;
+  right: -2px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+/* Fourth vids category */
+.chigozie-mix-bg {
+  position: absolute;
+  bottom: 87px;
+  right: 12px;
+  background: rgba(64, 77, 89, 0.8);
+  width: 14rem;
+  height: 3.5vh;
+}
+
+.chigozie-mix-img {
+  position: relative;
+  left: 100px;
+  filter: invert(100%) sepia(100%) saturate(0%) brightness(103%) contrast(100%);
+  width: 24px;
+}
+
+.correal {
+  color: #aca2a2;
+  font-size: 0.7rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=ythome.css.map */
