@@ -18,8 +18,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 nav {
-  // width: 100%;
-  // position: relative;
   z-index: 1030;
 }
 nav #navigation {
@@ -27,8 +25,6 @@ nav #navigation {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  // left: 1%;
-  // right: 1%;
   height: 12vh;
   background: #222222;
   border-bottom: 1px solid #706f6f;
@@ -182,26 +178,12 @@ p:nth-child(12) {
   margin-left: 1em;
   border-radius: 75px;
 }
-// header .preview-cont p:nth-child(2),
-// P:nth-child(3),
-// p:nth-child(4),
-// p:nth-child(5),
-// p:nth-child(6),
-// p:nth-child(7),
-// p:nth-child(8),
-// p:nth-child(9),
-// p:nth-child(10),
-// p:nth-child(11),
-// p:nth-child(12):hover {
-//   background: #3f3e3e;
-// }
 
 // Main container
 
 main {
   display: grid;
   grid-template-columns: 17% 83%;
-  // z-index: -1000;
 }
 main aside {
   display: flex;
@@ -210,8 +192,6 @@ main aside {
   position: fixed;
   top: 76px;
   width: 17%;
-  // overflow-x: hidden;
-  // overflow-y: scroll;
   height: 550px;
 }
 main aside:hover {
